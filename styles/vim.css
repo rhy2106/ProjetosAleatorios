@@ -1,0 +1,128 @@
+textarea{
+	color: white;
+	resize: none;
+	text-align: left;
+}
+
+#editor{
+	display: flex;
+	font-family: monospace;
+	justify-content: center;
+	background-color:#464646;
+	padding: 10px;
+	height: 405.733px;
+	width: 650px;
+	overflow: hidden;
+	border-radius: 10px;
+	flex-direction: column;
+}
+
+
+#wrap_highlight{
+	position:relative;
+	width: 630px;
+	overflow:hidden;
+}
+
+#highlight, #code, #barra{
+	font-family: monospace;
+	font-variant-ligatures: none;
+	border:none;
+	outline:none;
+	background: #262626;
+	line-height:1.2;
+	font-size: 14px;
+	height: 380px;
+	overflow-y:scroll;
+}
+#code{
+	margin: 0;
+	display: block;
+}
+
+#code, #highlight{
+	text-align:left;
+	position:absolute;
+	width:100%;
+	left:0;
+	right:0;
+	padding: 0px 5px;
+}
+
+#highlight{
+	z-index: 1;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	color:white;
+}
+#code{
+	background-color:transparent;
+	color:transparent;
+	caret-color: white;
+	z-index: 2;
+}
+
+#wrap_barra{
+	display:flex;
+	flex-direction: row;
+}
+
+#barra{
+	padding: 0px 5px;
+	text-align: right;
+	user-select:none;
+	color:#aaaa00;
+	scrollbar-width: none;
+	margin-right: 1px;
+}
+
+#barra::-webkit-scrollbar{
+	display:none;
+}
+
+.status_bar{
+	color:white;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	margin-top: 1px;
+	font-family: monospace;
+	background: #262626;
+	padding: 0px 10px;
+	line-height:1.2;
+}
+.borda{
+	background-color:white;
+	padding:1px;
+}
+
+/* Syntax Colors */
+.vazio{
+	color:#464646;
+}
+.comentario{
+	color:#767676;
+}
+.palavra{
+	color:#46aa46;
+}
+.caracter{
+	color:#46aa46;
+}
+.reservado{
+	color:#ff0055;
+	font-weight: bold;
+}
+.tipo{
+	color:#ffbb00;
+	font-weight: bold;
+}
+.operador{
+	color:#ff88ff;
+}
+.numero{
+	color:#55ffff;
+}
+.id{
+	color:#8a8bff;
+}

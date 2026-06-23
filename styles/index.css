@@ -1,0 +1,123 @@
+body{
+	background-color: #565656;
+	color: white;
+	text-align: center;
+	font-family: monospace;
+	font-size: 12pt;
+	font-variant-ligatures: none;
+	margin: 0px;
+}
+
+#header{
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+	background-color: #363636;
+	padding: 30px;
+	margin-bottom:20px;
+}
+
+#header a{
+	border-radius: 20px;
+	background-color: #565656;
+	padding: 10px;
+	padding-bottom: 5px;
+	color: white;
+	text-decoration: none;
+	outline: solid 1px white;
+}
+
+#header a:hover{
+	outline: solid 1px gold;
+	color: gold;
+}
+
+#left{
+	margin-top:auto;
+	margin-bottom:auto;
+	padding: auto;
+}
+
+#header button{
+	border-radius: 20px;
+	background-color: #565656;
+	padding: 10px;
+	color: white;
+	border:none;
+	outline: solid 1px white;
+}
+
+#header button:hover{
+	outline: solid 1px gold;
+	color: gold;
+}
+
+#titulo{
+	font-size:18pt;
+	font-weight: bold;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	/* border: solid 2px white; */
+}
+
+#img_perfil{
+	height: 200px;
+	width: 200px;
+}
+
+#descricao{
+	text-align:left;
+}
+
+#projetos{
+	display: flex;
+	flex-direction:row;
+	background-color: #363636;
+	padding: 10px;
+	border-radius: 10px;
+	height: 300px;
+	width: 80%;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+#projetos a{
+	margin: 10px;
+	color: white;
+	outline: solid 2px white;
+	text-decoration: none;
+}
+
+#projetos a:hover{
+	color: gold;
+	outline: solid 2px gold;
+}
+
+.item{
+	position:relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	background-color: #565656;
+	height: 280px;
+	width: 200px;
+}
+.item img{
+	z-index:0;
+	position: absolute;
+	left: 0;
+	width: 200px;
+	height: 260px;
+}
+.item div{
+	z-index:1;
+	background-color: #363636;
+
+	position: relative;
+	top: 260px;
+	padding: 2.5px;
+	height: 15px;
+	text-align: center;
+}
