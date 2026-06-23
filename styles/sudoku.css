@@ -1,0 +1,91 @@
+#sudoku{
+	background-color: #363636;
+	width:400px;
+	height:400px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	padding:2px;
+}
+
+.bloco{
+	outline: solid 2px #565656;
+	margin: auto;
+	background-color: #363636;
+	width:32%;
+	height:32%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-around;
+}
+
+.bloco button{
+	color: white;
+	border: none;
+	background-color: #565656;
+	width: 30%;
+	height: 30%;
+	line-height: 250%;
+	margin:auto;
+	text-align:center;
+}
+
+.bloco button.selected{
+	background-color: #767676;
+}
+
+.bloco button.highlight{
+	background-color:#666666;
+}
+
+.bloco button.errado{
+	background-color:#662222;
+}
+
+.bloco button.errado:hover{
+	background-color:#664444;
+}
+
+.bloco button:hover, .bloco button.highlight:hover, .bloco button.selected:hover{
+	background-color: #767676;
+}
+
+#botoes button{
+	background-color:#565656;
+	border: 2px solid white;
+	color: white;
+	margin: 5px;
+	width:40px;
+	height:40px;
+}
+
+#sudoku.naovisivel, #botoes.naovisivel{
+	display:none;
+}
+
+#resultados{
+	width:100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align:center;
+}
+
+#resultados button{
+	margin:auto;
+	width: 200px;
+}
+
+#dificuldades button{
+	background-color:#565656;
+	border: 2px solid white;
+	color: white;
+	margin: 5px;
+	width:100px;
+	height:40px;
+}
+#botoes button:hover, #dificuldades button:hover, #resultados button:hover{
+	background-color:#767676;
+}
