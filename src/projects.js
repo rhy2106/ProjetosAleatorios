@@ -1,14 +1,14 @@
 const projetos = document.getElementById("projetos");
 const projects = ['vim','sudoku','typing'];
 const project_files = {
-	'vim':'/views/vim.html',
-	'sudoku':'/views/sudoku.html',
-	'typing':'/views/typing.html'
+	'vim':'/ProjetosAleatorios/views/vim.html',
+	'sudoku':'/ProjetosAleatorios/views/sudoku.html',
+	'typing':'/ProjetosAleatorios/views/typing.html'
 }
 const images = {
-	'vim':'/imagens/vim.png',
-	'sudoku':'/imagens/sudoku.png',
-	'typing':'/imagens/sudoku.png'
+	'vim':'/ProjetosAleatorios/imagens/vim.png',
+	'sudoku':'/ProjetosAleatorios/imagens/sudoku.png',
+	'typing':'/ProjetosAleatorios/imagens/sudoku.png'
 }
 
 for(let i = 0; i < projects.length; i++){

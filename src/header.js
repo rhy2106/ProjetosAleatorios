@@ -5,7 +5,7 @@
 const header = document.getElementById("header");
 const categories = ['home'];
 const header_files = {
-	'home':'/index.html'
+	'home':'/ProjetosAleatorios/index.html'
 }
 
 const left = document.createElement("div");
